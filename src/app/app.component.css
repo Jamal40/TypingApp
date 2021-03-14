@@ -1,0 +1,37 @@
+.title {
+  text-align: center;
+}
+.random-text {
+  color: #00aedb;
+  text-align: center;
+  font-size: 2rem;
+  font-style: italic;
+}
+.result {
+  margin-top: 0.75em;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(76, 214, 168);
+}
+.card {
+  margin: auto;
+  width: 500px;
+}
+.grey {
+  color: grey;
+  font-weight: bolder;
+}
+.red {
+  color: #ff8b94;
+  text-decoration: underline;
+}
+.green {
+  color: rgb(66, 209, 66);
+}
+
+.evaluated-text {
+  margin-top: 1em;
+  font-size: 1.25rem;
+  text-align: center;
+}
