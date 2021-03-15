@@ -25,6 +25,10 @@
       </p>
 
       <p class="result" *ngIf="inputText == randomSentence">You Win!</p>
+      <p class="speed" *ngIf="inputText == randomSentence">
+        Your typing speed is: {{ typingVelocity.toFixed(3) }}
+        <span>letters/second</span>
+      </p>
     </div>
   </div>
 </div>

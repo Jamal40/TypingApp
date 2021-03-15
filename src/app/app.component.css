@@ -40,3 +40,8 @@
   margin: auto;
   margin-bottom: 2em;
 }
+.speed {
+  text-align: center;
+  color: #810000;
+  font-weight: bold;
+}

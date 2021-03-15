@@ -9,12 +9,19 @@ import { lorem } from 'faker';
 export class AppComponent {
   randomSentence = lorem.sentence();
   inputText = '';
+  startTime = Date.now();
+  interval = 0;
+  typingVelocity = 0;
   generateNewSentenece() {
+    this.startTime = Date.now();
     this.randomSentence = lorem.sentence();
   }
   onTyping(value: string) {
-    console.log(value);
     this.inputText = value;
+    if (this.inputText === this.randomSentence) {
+      this.interval = Date.now() - this.startTime;
+      this.typingVelocity = this.randomSentence.length / (this.interval / 1000);
+    }
   }
   evaluateConvenientColor(letter: string, index: number) {
     if (!this.inputText[index]) {
