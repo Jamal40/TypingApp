@@ -3,6 +3,12 @@
     <div class="content">
       <h2 class="title">Typing Challenge</h2>
       <p class="random-text">{{ randomSentence }}</p>
+      <button
+        (click)="generateNewSentenece()"
+        class="button is-link is-outlined"
+      >
+        Regenerate
+      </button>
       <input
         (input)="onTyping($event.target.value)"
         class="input is-primary"
